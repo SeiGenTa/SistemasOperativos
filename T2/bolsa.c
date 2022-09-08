@@ -24,30 +24,21 @@ int vendo(int precio, char *vendedor, char *comprador) {
         if (precioInMercado < precio){ //Si se cumple que es el precio menor se coloca en la lista
             nombre_vendedor = vendedor;
             precioInMercado = precio;
+            compro = "";
         }
         pthread_mutex_unlock(&cont_merc);
 
-        while(nombre_vendedor == vendedor){
-            if(compro != ""){
-                break;
-            }
-            pthread_cond_wait(&cond_merc,NULL);
-        }
-        
-        pthread_mutex_lock(&cont_merc);
-        if(vendedor == nombre_vendedor){
-            if (compro != ""){
-                char comp = compro;
+        //Los unicos momentos en los que despertaria, seria cuando:
+        //Cuando alguien le compra o alguien publica un precio mejor
+        pthread_cond_wait(&cond_merc,NULL);
 
-                comprador = comp
-                nombre_vendedor = "";
-                precioInMercado = 1;
-                break;
-            }
+        if(precioInMercado != precio){
+            return -1;
         }
-        pthread_mutex_lock(&cont_merc);
+        char compradoPor;
+        strcpy(compradoPor,comprador)
     }
-    if 
+    return precio;
 }
 
 
@@ -56,4 +47,5 @@ int compro(char *comprador, char *vendedor) {
     if (precio == -1){
         return 0;
     }
+
 }
