@@ -56,7 +56,7 @@ static void *juanFun(void *ptr) {
     fprintf(stderr, "juan tenia que comprar a 5\n");
     exit(1);
   }
-  if (strcmp(c, "diego")!=0) {
+  if (strcmp(c,"diego")!=0) {
     fprintf(stderr, "juan tenia que comprarle a diego\n");
     exit(1);
   }
@@ -69,6 +69,7 @@ static void *diegoFun(void *ptr) {
   printf("diego: compro\n");
   if (compro("diego", v)!= 5) {
     fprintf(stderr, "diego tenia que comprar a 5\n");
+    
     exit(1);
   }
   if (strcmp(v, "juan")!=0) {

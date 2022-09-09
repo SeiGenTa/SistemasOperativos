@@ -5,47 +5,66 @@
 
 #include "bolsa.h"
 
-//generaremos un estructura que sera como un producto en venta
-//en conjunto con su vendedor y precio
 
-pthread_mutex_t cont_merc = PTHREAD_MUTEX_INITIALIZER; //Para modificar el mercado
-pthread_cond_t cond_merc = PTHREAD_COND_INITIALIZER; //Sera para el modo esperar del vendedor
+char nombreVoid[] = " ";
 
-//VENDEDOR
-char nombre_vendedor[100]; //Nombre del vendedor
-int precioInMercado = -1; //-1 indicara que no hay nadie vendiendo
+//pthread config
+pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t c = PTHREAD_COND_INITIALIZER;
 
-char compro[100] = ""; //Nombre del comprador
+//Informacion del vendedoe actual
+char *nombre_vendedor;
+int precio_merc = -1; //Val init sera -1, (-1 indicara que no hay a la venta)
+
+char *nombre_comprador;
 
 int vendo(int precio, char *vendedor, char *comprador) {
-    //Para leer la informacion y modificar bloqueamos la informacion
-    for(;;){
-        pthread_mutex_lock(&cont_merc);
-        if (precioInMercado < precio){ //Si se cumple que es el precio menor se coloca en la lista
-            nombre_vendedor = vendedor;
-            precioInMercado = precio;
-            compro = "";
-        }
-        pthread_mutex_unlock(&cont_merc);
-
-        //Los unicos momentos en los que despertaria, seria cuando:
-        //Cuando alguien le compra o alguien publica un precio mejor
-        pthread_cond_wait(&cond_merc,NULL);
-
-        if(precioInMercado != precio){
-            return -1;
-        }
-        char compradoPor;
-        strcpy(compradoPor,comprador)
+    pthread_mutex_lock(&m);
+    printf("inicio vendedor: %s a un precio de: %i \n", vendedor, precio);
+    //No hay nadie vendiendo o el precio del mercado es mas alto que el precio que ofrece
+    if ((precio_merc == -1) || (precio_merc > precio)){
+        //Cambiamos la informacion global
+        precio_merc = precio;
+        nombre_vendedor = vendedor;
+        pthread_cond_broadcast(&c);//Despertamos a los vendedores que esten esperando vender
     }
-    return precio;
-}
-
-
-
-int compro(char *comprador, char *vendedor) {
-    if (precio == -1){
+    else{ //No puede ofrecerlo, ahi alguien con mejor precio
+        pthread_mutex_unlock(&m);//Quitamos bloqueo
         return 0;
     }
+
+    pthread_cond_wait(&c,&m); //Iniciamos la espera
+    //Solo puede despertar porque aparecio otro vendedor y lo remplazo
+    //O vendio su producto
+
+    //Por lo que solicitamos que el bloqueo de la seccion
+    if (nombre_vendedor != vendedor){
+        pthread_mutex_unlock(&m); //Esto nos indicara que aparecio alguien con mejor precio
+        //por lo que retornaremos el falso
+        return 0;
+        
+    }
+    //Aqui solo se llega cuando el vendedor si vende su accion
+    precio_merc = -1;
+    strcpy(comprador,nombre_comprador);
+    pthread_mutex_unlock(&m); //No usaremos mas la memoria global
+    
+    return 1;
+}
+
+int compro(char *comprador, char *vendedor) {
+    printf("inicia comprado: %s\n",comprador);
+    pthread_mutex_lock(&m);
+    if (precio_merc != -1){ //Hay un vendedor disponible, 
+        strcpy(vendedor,nombre_vendedor);
+        nombre_comprador = comprador; //Cambiamos el nombre del comprador
+        int precioPagado = precio_merc;
+        pthread_cond_broadcast(&c);
+        pthread_mutex_unlock(&m);
+        return precioPagado;
+    }
+    pthread_mutex_unlock(&m);
+    //En caso de que no haya nadie vendiendo retornamos false
+    return 0;
 
 }
