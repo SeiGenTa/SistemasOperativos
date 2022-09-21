@@ -2,69 +2,85 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <string.h>
-
 #include "bolsa.h"
 
+//Global Variables
+//Logic
+int *isSold; //if is 1, so was sold
 
-char nombreVoid[] = " ";
+//Info of seller
+char **nameSeller;
+int *priceSeller = NULL; //Cond initial is Null
 
-//pthread config
-pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t c = PTHREAD_COND_INITIALIZER;
+//Info of buyer
+char **nameBuyer;
 
-//Informacion del vendedoe actual
-char *nombre_vendedor;
-int precio_merc = -1; //Val init sera -1, (-1 indicara que no hay a la venta)
-
-char *nombre_comprador;
+//Cond and Mutex of pthread
+static pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
+static pthread_cond_t c = PTHREAD_COND_INITIALIZER;
 
 int vendo(int precio, char *vendedor, char *comprador) {
+    int* myPrice = malloc(sizeof(int));
+    *myPrice = precio;//init: our price
+    int* myIsSold = malloc(sizeof(int));
+    *myIsSold = 0; //init: false
+    char** myBuyer = malloc(sizeof(char*));
+    *myBuyer = comprador;//init: this will modify our buyer
+    char** myseller = malloc(sizeof(char*));
+    *myseller = vendedor;//init: our name
+
     pthread_mutex_lock(&m);
-    printf("inicio vendedor: %s a un precio de: %i \n", vendedor, precio);
-    //No hay nadie vendiendo o el precio del mercado es mas alto que el precio que ofrece
-    if ((precio_merc == -1) || (precio_merc > precio)){
-        //Cambiamos la informacion global
-        precio_merc = precio;
-        nombre_vendedor = vendedor;
-        pthread_cond_broadcast(&c);//Despertamos a los vendedores que esten esperando vender
+    if(priceSeller == NULL){//if not exist a seller, so we change the global data with the own data
+        isSold = myIsSold;
+        priceSeller = myPrice;
+        nameSeller = myseller;
+        nameBuyer = myBuyer;
     }
-    else{ //No puede ofrecerlo, ahi alguien con mejor precio
-        pthread_mutex_unlock(&m);//Quitamos bloqueo
-        return 0;
+    else if(*priceSeller > *myPrice){//if we have better price than the actually seller, so we change the global data with the own data
+        isSold = myIsSold;
+        priceSeller = myPrice;
+        nameSeller = myseller;
+        nameBuyer = myBuyer;
+        pthread_cond_broadcast(&c);// and we wake up the previus seller
     }
 
-    pthread_cond_wait(&c,&m); //Iniciamos la espera
-    //Solo puede despertar porque aparecio otro vendedor y lo remplazo
-    //O vendio su producto
-
-    //Por lo que solicitamos que el bloqueo de la seccion
-    if (nombre_vendedor != vendedor){
-        pthread_mutex_unlock(&m); //Esto nos indicara que aparecio alguien con mejor precio
-        //por lo que retornaremos el falso
-        return 0;
-        
+    pthread_cond_wait(&c,&m);
+    pthread_mutex_unlock(&m); //Our information is the pointer 
+    int t = 0; //comparator
+    if(*myIsSold == 1){
+        t = 1; //now we return 1 
     }
-    //Aqui solo se llega cuando el vendedor si vende su accion
-    precio_merc = -1;
-    strcpy(comprador,nombre_comprador);
-    pthread_mutex_unlock(&m); //No usaremos mas la memoria global
+    //we free the memory
+    free(myPrice);
+    free(myBuyer);
+    free(myIsSold);
+    free(myseller);
     
-    return 1;
+    return t;
 }
 
-int compro(char *comprador, char *vendedor) {
-    printf("inicia comprado: %s\n",comprador);
-    pthread_mutex_lock(&m);
-    if (precio_merc != -1){ //Hay un vendedor disponible, 
-        strcpy(vendedor,nombre_vendedor);
-        nombre_comprador = comprador; //Cambiamos el nombre del comprador
-        int precioPagado = precio_merc;
-        pthread_cond_broadcast(&c);
-        pthread_mutex_unlock(&m);
-        return precioPagado;
-    }
-    pthread_mutex_unlock(&m);
-    //En caso de que no haya nadie vendiendo retornamos false
-    return 0;
 
+int compro(char *comprador, char *vendedor) {
+    pthread_mutex_lock(&m);
+    if (priceSeller == NULL){
+        pthread_mutex_unlock(&m);
+        return 0;
+    }
+    //we obtain the seller´s data
+    strcpy(vendedor,*nameSeller);
+    int price = *priceSeller;
+    *isSold = 1;
+    //and change the buyer's data with the own
+    strcpy(*nameBuyer,comprador);//now the seller has the seller's name
+
+    //we erase the pointer (the seller has this info)
+    isSold = NULL;
+    nameBuyer = NULL;
+    nameSeller = NULL;
+    priceSeller = NULL;
+
+    pthread_cond_broadcast(&c);
+    pthread_mutex_unlock(&m);
+
+    return price;
 }
