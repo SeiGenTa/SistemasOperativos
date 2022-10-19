@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <pthread.h>
+#include <nthread.h>
 #include <string.h>
 
 #include "pss.h"
