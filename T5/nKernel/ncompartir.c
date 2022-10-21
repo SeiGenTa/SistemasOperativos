@@ -39,7 +39,12 @@ void nCompartir(void *ptr) {
 
 static void f(nThread th) {
     START_CRITICAL
-    nth_delQueue(enFil,th);
+    cant_acc--;
+    int* dir =(int*) (th->ptr);
+    *dir = 1;
+    if(nth_queryThread(enFil,th)){
+        nth_delQueue(enFil,th);
+    }
     END_CRITICAL
     return;
 }
@@ -47,17 +52,21 @@ static void f(nThread th) {
 void *nAcceder(int max_millis) {
     START_CRITICAL
     cant_acc++;
+    int a = 0;
+
     nThread thisTh= nSelf();
+    thisTh->ptr = &a;
     if (nthreadG == NULL){
-        
+        nth_putBack(enFil,thisTh);
         if (max_millis > 0){
             suspend(WAIT_ACCEDER_TIMEOUT);
-            nth_programTimer((max_millis*1000000),f);
+            long long nano =(long long) max_millis*1000000;
+            nth_programTimer(nano,f);
         }
         else{
             suspend(WAIT_ACCEDER);
         }
-        nth_putBack(enFil,thisTh);
+        
         schedule();
 
         if (thisTh->status == WAIT_ACCEDER_TIMEOUT){
@@ -65,8 +74,12 @@ void *nAcceder(int max_millis) {
             return NULL;
         }
     }
+    void* memory;
 
-    void* memory = (*nthreadG)->ptr ? (*nthreadG)->ptr : NULL;
+    if (a == 0)
+        memory = (*nthreadG)->ptr;
+    else 
+        memory = NULL;
     END_CRITICAL
     return memory;
 }
