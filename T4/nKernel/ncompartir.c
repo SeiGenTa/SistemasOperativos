@@ -44,6 +44,7 @@ void *nAcceder(int max_millis) {
         suspend(WAIT_ACCEDER);
         schedule();
     }
+    printf("se mostro hasta aqui\n");
     void* memory = (*nthreadG)->ptr;
     END_CRITICAL
     return memory;
