@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/vigia-sol/Vigia-sol/Module.symvers := sed 's/ko$$/o/' /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/modules.order | scripts/mod/modpost -m    -o /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/Module.symvers -e -i Module.symvers   -T -

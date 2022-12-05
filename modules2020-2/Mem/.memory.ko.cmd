@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/Modules2020-2/Mem/memory.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T arch/x86/module.lds -o /media/sf_SistemasOperativos/Modules2020-2/Mem/memory.ko /media/sf_SistemasOperativos/Modules2020-2/Mem/memory.o /media/sf_SistemasOperativos/Modules2020-2/Mem/memory.mod.o;  true

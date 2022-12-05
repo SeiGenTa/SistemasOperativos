@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/modules2020-2/Hello/hello.mod := { echo  /media/sf_SistemasOperativos/modules2020-2/Hello/hello.o;  echo; } > /media/sf_SistemasOperativos/modules2020-2/Hello/hello.mod

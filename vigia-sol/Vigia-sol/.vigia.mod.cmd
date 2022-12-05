@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/vigia-sol/Vigia-sol/vigia.mod := { echo  /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/kmutex.o /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/vigia-impl.o;  echo; } > /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/vigia.mod

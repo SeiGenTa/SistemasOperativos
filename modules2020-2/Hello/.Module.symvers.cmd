@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/modules2020-2/Hello/Module.symvers := sed 's/ko$$/o/' /media/sf_SistemasOperativos/modules2020-2/Hello/modules.order | scripts/mod/modpost -m    -o /media/sf_SistemasOperativos/modules2020-2/Hello/Module.symvers -e -i Module.symvers   -T -

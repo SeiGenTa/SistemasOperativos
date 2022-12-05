@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d9be698-9e31-4689-99cc-a06739cfaeb0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/SistemasOperativos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T7/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T7/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T7/kmutex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T7/kmutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/T7/prodcons-impl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Hello/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Hello/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Hello/hello.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/KMutex/kmutex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/KMutex/kmutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Mem/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Mem/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Mem/memory.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/kmutex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/kmutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/multicast-impl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/t3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/.README.txt.swp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/kmutex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/kmutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/pipe-impl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/t3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/kmutex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/kmutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/syncread-impl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/t3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules2020-2/modulos-jbustos.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/kmutex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/kmutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/t3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia-impl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="2.4" />
+  </component>
+  <component name="ProjectId" id="2IC7uY0YEegIEseslrKIwL2SV2H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "G:/SistemasOperativos/modules2020-2/Syncread"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\SistemasOperativos\modules2020-2\Syncread" />
+      <recent name="G:\SistemasOperativos\modules2020-2\Pipe" />
+      <recent name="G:\SistemasOperativos\modules2020-2\Multicast" />
+      <recent name="G:\SistemasOperativos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\SistemasOperativos" />
+      <recent name="G:\SistemasOperativos\Tarea1" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d9be698-9e31-4689-99cc-a06739cfaeb0" name="Changes" comment="" />
+      <created>1669673935440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669673935440</updated>
+      <workItem from="1669673938465" duration="2676000" />
+      <workItem from="1670030323964" duration="2468000" />
+      <workItem from="1670198781957" duration="7543000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
