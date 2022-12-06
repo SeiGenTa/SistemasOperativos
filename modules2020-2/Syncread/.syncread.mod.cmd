@@ -1,1 +1,0 @@
-cmd_/media/sf_SistemasOperativos/Modules2020-2/Syncread/syncread.mod := { echo  /media/sf_SistemasOperativos/Modules2020-2/Syncread/kmutex.o /media/sf_SistemasOperativos/Modules2020-2/Syncread/syncread-impl.o;  echo; } > /media/sf_SistemasOperativos/Modules2020-2/Syncread/syncread.mod

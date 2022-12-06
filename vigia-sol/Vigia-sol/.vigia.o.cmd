@@ -1,1 +1,1 @@
-cmd_/media/sf_SistemasOperativos/vigia-sol/Vigia-sol/vigia.o := ld -m elf_x86_64   -r -o /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/vigia.o /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/kmutex.o /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/vigia-impl.o
+cmd_/media/sf_SistemasOperativos/vigia-sol/vigia-sol/vigia.o := ld -m elf_x86_64 -z noexecstack   -r -o /media/sf_SistemasOperativos/vigia-sol/vigia-sol/vigia.o /media/sf_SistemasOperativos/vigia-sol/vigia-sol/kmutex.o /media/sf_SistemasOperativos/vigia-sol/vigia-sol/vigia-impl.o

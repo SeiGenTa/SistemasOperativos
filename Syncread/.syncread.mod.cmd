@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/Syncread/syncread.mod := { echo  /media/sf_SistemasOperativos/Syncread/kmutex.o /media/sf_SistemasOperativos/Syncread/syncread-impl.o;  echo; } > /media/sf_SistemasOperativos/Syncread/syncread.mod

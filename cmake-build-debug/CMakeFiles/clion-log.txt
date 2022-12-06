@@ -1,4 +1,4 @@
-C:\Users\Seita\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/Seita/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/ninja/win/ninja.exe -G Ninja -S G:\SistemasOperativos -B G:\SistemasOperativos\cmake-build-debug
+C:\Users\alvar\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/alvar/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/ninja/win/ninja.exe -G Ninja -S C:\Users\alvar\Git\SistemasOperativos -B C:\Users\alvar\Git\SistemasOperativos\cmake-build-debug
 CMake Error at CMakeLists.txt:1:
   Parse error.  Expected a command name, got unquoted argument with text
   "ccflags-y".

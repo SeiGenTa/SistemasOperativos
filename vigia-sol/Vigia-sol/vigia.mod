@@ -1,2 +1,2 @@
-/media/sf_SistemasOperativos/vigia-sol/Vigia-sol/kmutex.o /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/vigia-impl.o
+/media/sf_SistemasOperativos/vigia-sol/vigia-sol/kmutex.o /media/sf_SistemasOperativos/vigia-sol/vigia-sol/vigia-impl.o
 

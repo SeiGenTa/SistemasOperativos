@@ -16,48 +16,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d9be698-9e31-4689-99cc-a06739cfaeb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SistemasOperativos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T7/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T7/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T7/kmutex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T7/kmutex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/T7/prodcons-impl.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Hello/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Hello/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Hello/hello.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/KMutex/kmutex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/KMutex/kmutex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Mem/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Mem/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Mem/memory.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/kmutex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/kmutex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/multicast-impl.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Multicast/t3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/.README.txt.swp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/kmutex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/kmutex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/pipe-impl.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Pipe/t3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/kmutex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/kmutex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/syncread-impl.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/Syncread/t3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules2020-2/modulos-jbustos.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/kmutex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/kmutex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/t3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia-impl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T7/.kmutex.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T7/.prodcons-impl.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T7/kmutex.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T7/prodcons-impl.c" beforeDir="false" afterPath="$PROJECT_DIR$/T7/prodcons-impl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/.Module.symvers.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/.hello.ko.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/.hello.mod.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/.hello.mod.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/.hello.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/.modules.order.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/Module.symvers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/hello.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/hello.ko" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/hello.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/hello.mod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/hello.mod.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/hello.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Hello/modules.order" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/KMutex/kmutex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/KMutex/kmutex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/.Module.symvers.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/.memory.ko.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/.memory.mod.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/.memory.mod.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/.memory.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/.modules.order.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/Module.symvers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/memory.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/memory.ko" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/memory.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/memory.mod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/memory.mod.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/memory.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Mem/modules.order" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Multicast/.multicast-impl.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Multicast/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Multicast/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Multicast/kmutex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Multicast/kmutex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Multicast/multicast-impl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Multicast/t3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.Module.symvers.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.README.txt.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.kmutex.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.modules.order.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.pipe-impl.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.pipe.ko.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.pipe.mod.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.pipe.mod.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/.pipe.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/Module.symvers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/kmutex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/kmutex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/kmutex.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/modules.order" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/pipe-impl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/pipe-impl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/pipe.ko" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/pipe.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/pipe.mod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/pipe.mod.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/pipe.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Pipe/t3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/.kmutex.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/.modules.order.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/.syncread-impl.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/.syncread.mod.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/.syncread.o.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/kmutex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/kmutex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/kmutex.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/modules.order" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/syncread-impl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/syncread-impl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/syncread.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/syncread.mod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/syncread.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/Syncread/t3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules2020-2/modulos-jbustos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.Module.symvers.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.Module.symvers.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.kmutex.o.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.kmutex.o.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.modules.order.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.modules.order.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia-impl.o.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia-impl.o.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia.ko.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia.ko.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia.mod.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia.mod.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia.mod.o.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia.mod.o.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia.o.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/.vigia.o.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/kmutex.o" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/kmutex.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/modules.order" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/modules.order" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia-impl.o" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia-impl.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.ko" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.ko" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.mod" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.mod.c" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.mod.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.mod.o" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.mod.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.o" beforeDir="false" afterPath="$PROJECT_DIR$/vigia-sol/Vigia-sol/vigia.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,16 +150,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "G:/SistemasOperativos/modules2020-2/Syncread"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alvar/Git/SistemasOperativos&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\SistemasOperativos\modules2020-2\Syncread" />
@@ -117,6 +185,10 @@
       <workItem from="1669673938465" duration="2676000" />
       <workItem from="1670030323964" duration="2468000" />
       <workItem from="1670198781957" duration="7543000" />
+      <workItem from="1670245434588" duration="1427000" />
+      <workItem from="1670250864577" duration="6744000" />
+      <workItem from="1670263377096" duration="3135000" />
+      <workItem from="1670281688269" duration="5798000" />
     </task>
     <servers />
   </component>

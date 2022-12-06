@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/Syncread/Module.symvers := sed 's/ko$$/o/' /media/sf_SistemasOperativos/Syncread/modules.order | scripts/mod/modpost -m    -o /media/sf_SistemasOperativos/Syncread/Module.symvers -e -i Module.symvers   -T -

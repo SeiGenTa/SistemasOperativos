@@ -1,1 +1,0 @@
-cmd_/media/sf_SistemasOperativos/Modules2020-2/Pipe/pipe.mod := { echo  /media/sf_SistemasOperativos/Modules2020-2/Pipe/kmutex.o /media/sf_SistemasOperativos/Modules2020-2/Pipe/pipe-impl.o;  echo; } > /media/sf_SistemasOperativos/Modules2020-2/Pipe/pipe.mod

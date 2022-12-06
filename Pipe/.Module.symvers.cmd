@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/Pipe/Module.symvers := sed 's/ko$$/o/' /media/sf_SistemasOperativos/Pipe/modules.order | scripts/mod/modpost -m    -o /media/sf_SistemasOperativos/Pipe/Module.symvers -e -i Module.symvers   -T -

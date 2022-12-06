@@ -1,1 +1,0 @@
-cmd_/media/sf_SistemasOperativos/modules2020-2/Hello/hello.ko := ld -r -m elf_x86_64 --build-id=sha1  -T arch/x86/module.lds -o /media/sf_SistemasOperativos/modules2020-2/Hello/hello.ko /media/sf_SistemasOperativos/modules2020-2/Hello/hello.o /media/sf_SistemasOperativos/modules2020-2/Hello/hello.mod.o;  true

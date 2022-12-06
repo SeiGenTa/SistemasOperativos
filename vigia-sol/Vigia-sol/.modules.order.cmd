@@ -1,1 +1,1 @@
-cmd_/media/sf_SistemasOperativos/vigia-sol/Vigia-sol/modules.order := {   echo /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/vigia.ko; :; } | awk '!x[$$0]++' - > /media/sf_SistemasOperativos/vigia-sol/Vigia-sol/modules.order
+cmd_/media/sf_SistemasOperativos/vigia-sol/vigia-sol/modules.order := {   echo /media/sf_SistemasOperativos/vigia-sol/vigia-sol/vigia.ko; :; } | awk '!x[$$0]++' - > /media/sf_SistemasOperativos/vigia-sol/vigia-sol/modules.order

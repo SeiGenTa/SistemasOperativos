@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/T7/prodcons.mod := { echo  /media/sf_SistemasOperativos/T7/kmutex.o /media/sf_SistemasOperativos/T7/prodcons-impl.o;  echo; } > /media/sf_SistemasOperativos/T7/prodcons.mod

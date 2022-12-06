@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/T7/prodcons.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T arch/x86/module.lds -o /media/sf_SistemasOperativos/T7/prodcons.ko /media/sf_SistemasOperativos/T7/prodcons.o /media/sf_SistemasOperativos/T7/prodcons.mod.o;  true

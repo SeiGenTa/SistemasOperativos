@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/Syncread/syncread.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T arch/x86/module.lds -o /media/sf_SistemasOperativos/Syncread/syncread.ko /media/sf_SistemasOperativos/Syncread/syncread.o /media/sf_SistemasOperativos/Syncread/syncread.mod.o;  true

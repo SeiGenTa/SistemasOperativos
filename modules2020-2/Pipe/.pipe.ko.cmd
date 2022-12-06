@@ -1,1 +1,0 @@
-cmd_/media/sf_SistemasOperativos/Modules2020-2/Pipe/pipe.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T arch/x86/module.lds -o /media/sf_SistemasOperativos/Modules2020-2/Pipe/pipe.ko /media/sf_SistemasOperativos/Modules2020-2/Pipe/pipe.o /media/sf_SistemasOperativos/Modules2020-2/Pipe/pipe.mod.o;  true

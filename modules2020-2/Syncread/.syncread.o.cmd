@@ -1,1 +1,0 @@
-cmd_/media/sf_SistemasOperativos/Modules2020-2/Syncread/syncread.o := ld -m elf_x86_64 -z noexecstack   -r -o /media/sf_SistemasOperativos/Modules2020-2/Syncread/syncread.o /media/sf_SistemasOperativos/Modules2020-2/Syncread/kmutex.o /media/sf_SistemasOperativos/Modules2020-2/Syncread/syncread-impl.o

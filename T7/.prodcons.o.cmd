@@ -1,0 +1,1 @@
+cmd_/media/sf_SistemasOperativos/T7/prodcons.o := ld -m elf_x86_64 -z noexecstack   -r -o /media/sf_SistemasOperativos/T7/prodcons.o /media/sf_SistemasOperativos/T7/kmutex.o /media/sf_SistemasOperativos/T7/prodcons-impl.o

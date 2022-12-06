@@ -1,1 +1,0 @@
-cmd_/media/sf_SistemasOperativos/Modules2020-2/Syncread/modules.order := {   echo /media/sf_SistemasOperativos/Modules2020-2/Syncread/syncread.ko; :; } | awk '!x[$$0]++' - > /media/sf_SistemasOperativos/Modules2020-2/Syncread/modules.order
